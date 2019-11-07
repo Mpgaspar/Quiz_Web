@@ -1,13 +1,4 @@
-/*const inpNick = document.getElementById("inpNick");
-const btnStart = document.getElementById("btnStart");
-
-btnStart.onclick = function () {
-    const nick = inpNick.value;
-
-    console.log(nick);
-
-};*/
-
+//Saving user data in localStorage
 function saveuser() {
   var inpNick = document.getElementById("inpNick");
   
@@ -24,6 +15,5 @@ function saveuser() {
 
   data.push(register);
   localStorage.setItem("datauser", JSON.stringify(data))
-
 }
 
