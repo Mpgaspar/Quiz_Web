@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Quiz</title>
+    <script src="users.js"></script>
 </head>
 <header>
     <nav>
@@ -19,11 +20,13 @@
     <h1>Final Quiz</h1>
     <h2>Test your web development skills! Good luck with your exame!</h2>
     <h3>HTML5 / CSS3 / JavaScript</h3>
+        <fieldset>
         <form name="myForm" id="cForm" class="forms">
-            <p><label for="cName">Nickname: </label><input type="text" name="tName" id="cName" size="20" maxlength="30" placeholder="Nickname" required/></p>
-            <input type="submit" value="START" class="submit-button"></submit> 
+            <p><label for="inpNick">Nickname: </label>
+            <input type="text" id="inpNick" size="20" maxlength="30" placeholder="Nickname" required/></p>
+            <button type="button" id="btnStart" onclick="saveuser()">START</button> 
         </form> 
-
+        </fieldset>
  <footer class="page-footer footer-copyright black">
         <div class="container row">
         Marcelo Gaspar © 2019 Copyright
