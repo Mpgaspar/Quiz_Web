@@ -10,10 +10,12 @@ function saveuser() {
   }
 
   var register = {
-      name: inpNick.value
+      name: inpNick.value,
   }
 
   data.push(register);
   localStorage.setItem("datauser", JSON.stringify(data))
 }
+
+
 

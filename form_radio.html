@@ -7,16 +7,11 @@
     <title>Web Quiz</title>
     <link rel="stylesheet" href="css/quiz.css">  
 </head>
-<header>
-    <nav>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
+<header onload="start();" >
+    <progress id="progressBar" max="100"></progress>
 </header>
 <body>
+   
     <h1 class="title">HTML / CSS / JS</h1>
        <div id="quizContainer" class="container">
         
@@ -43,6 +38,7 @@
         </div>
     </footer>
     <script src="question.js"></script>
-    <script src="quiz-script.js"></script>      
+    <script src="quiz-script.js"></script> 
+    <script src="progress-bar.js"></script>      
 </body>
 </html>

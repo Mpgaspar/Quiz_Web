@@ -5,38 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Quiz</title>
-    <script src="users.js"></script>
+    <link rel="stylesheet" href="css/quiz.css">   
 </head>
 <header>
-    <nav>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
+    
 </header>
 <body>
-    <h1>Final Quiz</h1>
-    <h2>Test your web development skills! Good luck with your exame!</h2>
-    <h3>HTML5 / CSS3 / JavaScript</h3>
-        <fieldset>
-        <form name="myForm" id="cForm" class="forms">
+    <h1 class="title">Final Quiz</h1>
+    <h3>Test your web development skills! Good luck with your exame!</h3>
+    <h4>HTML5 / CSS3 / JavaScript</h4>
+       <div id="quizContainer" class="container">
+        <form name="myForm" id="cForm" class="question">
             <p><label for="inpNick">Nickname: </label>
             <input type="text" id="inpNick" size="20" maxlength="30" placeholder="Nickname" required/></p>
-            <a href="form_radio.html"><button type="button" id="btnStart" onclick="saveuser()">START</button></a> 
-        </form> 
-        </fieldset>
- <footer class="page-footer footer-copyright black">
-        <div class="container row">
+            </form>
+            <a href="form_radio.html"><button type="button" class="next-btn" id="btnStart" onclick="saveuser()">START</button></a>
+        </div>
+ <footer class="footer">
+        <div>
         Marcelo Gaspar © 2019 Copyright
-        <div class="right-align">
+        <div class="footer-links">
             <a href="#!"><img src="assets/facebook.png" alt="icon_facebook"></a>
             <a href="#!"><img src="assets/instagram.png" alt="icon_insta"></a>
             <a href="#!"><img src="assets/twitter.png" alt="icon_twitter"></a>
             <a href="#!"><img src="assets/youtube.png" alt="icon_youtube"></a>
         </div>
         </div>
-    </footer>      
+    </footer>
+    <script src="quiz-script.js"></script>          
 </body>
 </html>

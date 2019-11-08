@@ -19,8 +19,8 @@ function loadQuestion (questionIndex) {
     opt1.textContent = q.option1;
     opt2.textContent = q.option2;
     opt3.textContent = q.option3;
-    opt4.textContent = q.option4;
-}
+    opt4.textContent = q.option4;   
+} 
 
 //Function that checks user response
 function loadNextQuestion () {
@@ -47,3 +47,25 @@ function loadNextQuestion () {
     loadQuestion(currentQuestion);
 }
 loadQuestion(currentQuestion);
+
+//Saving data_user in localStorage
+function saveuser() {
+    var inpNick = document.getElementById("inpNick");
+
+    var data = JSON.parse(localStorage.getItem("datauser"));
+  
+    if(data == null) {
+        localStorage.setItem("datauser","[]")
+        data = [];
+    }
+  
+    var register = [
+        {name: inpNick.value},
+        {score_user: score.value}
+    ];
+  
+    data.push(register);
+    localStorage.setItem("datauser", JSON.stringify(data))
+  }
+  saveuser()
+  

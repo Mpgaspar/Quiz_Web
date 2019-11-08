@@ -5,23 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css"> 
 </head>
 <header>
-    <nav>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
+    <progress id="progressBar" max="100"></progress>
 </header>
 <body>
-    <h1>HTML / CSS / JS</h1>
+    <h1 class="title">HTML / CSS / JS</h1>
 
-        <form name="myForm" id="cForm" class="forms">
-            <h1>1. Question one</h1>
+        <div id="quizContainer" class="container"> 
+            <div id="question" class="question"><h1>1. Question one</h1></div>
             
-            <input list="answers" name="myAnswer" /></label>
+            <label><input class="option" list="answers" name="myAnswer" />
             <datalist id="answers">
               <option value="Chrome">
               <option value="Firefox">
@@ -30,13 +25,14 @@
               <option value="Safari">
               <option value="Microsoft Edge">
               </datalist>
-            <input type="submit" value="NEXT" class="submit-button">
-        </form> 
+            </label>
+            <button type="button" id="nextButton" class="next-btn" onclick="loadNextQuestion()">NEXT</button>
+            </div> 
 
- <footer class="page-footer footer-copyright black">
-        <div class="container row">
+ <footer class="footer">
+        <div>
         Marcelo Gaspar © 2019 Copyright
-        <div class="right-align">
+        <div class="footer-links">
             <a href="#!"><img src="assets/facebook.png" alt="icon_facebook"></a>
             <a href="#!"><img src="assets/instagram.png" alt="icon_insta"></a>
             <a href="#!"><img src="assets/twitter.png" alt="icon_twitter"></a>

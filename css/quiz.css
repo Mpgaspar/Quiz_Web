@@ -4,8 +4,15 @@ body {
 
 .footer {
     position: absolute;
-    margin-top: 400px;
+    margin-top: 450px;
 }
+
+.footer-links {
+    display: inline-block;
+    position: relative;
+    margin-left: 900px;
+}
+
 .container {
     height: 300px;
     width: 1000px;

@@ -5,45 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css"> 
 </head>
 <header>
-    <nav>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
+    <progress id="progressBar" max="100"></progress>
 </header>
 <body>
-    <h1>HTML / CSS / JS</h1>
+    <h1 class="title">HTML / CSS / JS</h1>
 
-        <form name="myForm" id="cForm" class="forms">
-            <h1>1. Question one</h1>
+        <div id="quizContainer" class="container">
+            <div id="question" class="question"><h1>1. Question one</h1></div>
             
-            <p><input type="checkbox" name="tAnswer01" id="cAnswer01"/>
-            <label for="cAnswer01">Answer 01 </label>
-            </p>
+            <label class="option" for="inp01"><input type="checkbox" id="inp01" name="option" value="1"/><spam id="opt1"> Answer 01</spam></label>
+            <label class="option" for="inp02"><input type="checkbox" id="inp02" name="option" value="2"/><spam id="opt2"> Answer 02</spam></label>
+            <label class="option" for="inp03"><input type="checkbox" id="inp03" name="option" value="3"/><spam id="opt3"> Answer 03</spam></label>
+            <label class="option" for="inp04"><input type="checkbox" id="inp04" name="option" value="4"/><spam id="opt4"> Answer 04</spam></label>
+                
+            <button type="button" id="nextButton" class="next-btn" onclick="loadNextQuestion()">NEXT</button> 
+        </div> 
 
-            <p><input type="checkbox" name="tAnswer02" id="cAnswer02"/>
-            <label for="cAnswer02">Answer 02 </label>
-            </p>
-
-            <p><input type="checkbox" name="tAnswer03" id="cAnswer03"/>
-            <label for="cAnswer03">Answer 03 </label>
-            </p>
-
-            <p><input type="checkbox" name="tAnswer04" id="cAnswer04"/>
-            <label for="cAnswer04">Answer 04 </label>
-            </p>
-
-            <a href="form_dropdownmenu.html"><button type="button" id="btnStart" onclick="saveuser()">NEXT</button></a> 
-        </form> 
-
- <footer class="page-footer footer-copyright black">
-        <div class="container row">
+ <footer class="footer">
+        <div>
         Marcelo Gaspar © 2019 Copyright
-        <div class="right-align">
+        <div class="footer-links">
             <a href="#!"><img src="assets/facebook.png" alt="icon_facebook"></a>
             <a href="#!"><img src="assets/instagram.png" alt="icon_insta"></a>
             <a href="#!"><img src="assets/twitter.png" alt="icon_twitter"></a>
