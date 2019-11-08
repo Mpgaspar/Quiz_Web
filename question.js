@@ -39,7 +39,7 @@ var questions = [{
     "option1": "<checkbox>",
     "option2": "<input type='check'>",
     "option3": "<check>",
-    "option4": "<input type='checkbox'",
+    "option4": "<input type='checkbox'>",
     "answer": "4"
 }, {
     "question": "In HTML, which attribute is used to specify that an input field must be filled out?",
@@ -143,12 +143,5 @@ var questions = [{
     "option3": "onmouseclick",
     "option4": "onclick",
     "answer": "4"
-}, {
-    "question": "Web pages are written using ?",
-    "option1": "FTP",
-    "option2": "HTTP",
-    "option3": "HTML",
-    "option4": "URL",
-    "answer": "3"
-}
+} 
 ]

@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Quiz</title>
-    <link rel="stylesheet" href="css/quiz.css">
-    <script src="question.js"></script>
-    <script src="quiz-script.js"></script>
+    <link rel="stylesheet" href="css/quiz.css">  
 </head>
 <header>
     <nav>
@@ -20,7 +18,7 @@
 </header>
 <body>
     <h1 class="title">HTML / CSS / JS</h1>
-       <div class="container">
+       <div id="quizContainer" class="container">
         
             <div id="question" class="question"><h1>1. Question one</h1></div>
             
@@ -29,9 +27,9 @@
             <label class="option" for="inp03"><input type="radio" id="inp03" name="option" value="3"/><spam id="opt3"> Answer 03</spam></label>
             <label class="option" for="inp04"><input type="radio" id="inp04" name="option" value="4"/><spam id="opt4"> Answer 04</spam></label>
             
-            <a href="form_checkbox.html"><button type="button" class="next-btn" onclick="saveuser()">NEXT</button></a> 
+            <button type="button" id="nextButton" class="next-btn" onclick="loadNextQuestion()">NEXT</button> 
         </div>
-        <div id="result" style="display:none;"></div>
+        <div id="result" class="container result" style="display:none;"></div>
                
    <footer class="footer">
         <div>
@@ -43,6 +41,8 @@
             <a href="#!"><img src="assets/youtube.png" alt="icon_youtube"></a>
         </div>
         </div>
-    </footer>      
+    </footer>
+    <script src="question.js"></script>
+    <script src="quiz-script.js"></script>      
 </body>
 </html>
