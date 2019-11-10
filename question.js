@@ -20,7 +20,7 @@ var questions = [{
     "option3": "<heading>",
     "option4": "<h6>",
     "answer": "2"
-}, {
+}/*, {
     "question": "Choose the correct HTML element to define important text",
     "option1": "<b>",
     "option2": "<i>",
@@ -74,7 +74,7 @@ var questions = [{
 }, {
     "question": "How do you insert a comment in a CSS file?",
     "option1": "//this is a comment",
-    "option2": "/*this is a comment*/",
+    "option2": "/*this is a comment*",
     "option3": "'this is a comment",
     "option4": "//this is a comment//",
     "answer": "2"
@@ -121,7 +121,7 @@ var questions = [{
     "option2": "function myFunction()",
     "option3": "function:myFunction()",
     "option4": "function(myFunction())",
-    "answer": "1"
+    "answer": "2"
 }, {
     "question": "How do you call a function named 'myFunction'?",
     "option1": "call function myFunction()",
@@ -143,5 +143,5 @@ var questions = [{
     "option3": "onmouseclick",
     "option4": "onclick",
     "answer": "4"
-} 
+}*/ 
 ]

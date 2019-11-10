@@ -31,18 +31,30 @@ function loadNextQuestion () {
     }
     var answer = selectedOption.value;
     if(questions[currentQuestion].answer == answer) {
-        score += 10;
+        score += 5;
     }
     selectedOption.checked = false;
     currentQuestion++;
     if(currentQuestion == totQuestions - 1){
         nextButton.textContent = "Finish";
     }
+
+    //Show score when finish questios
     if(currentQuestion == totQuestions){
        container.style.display = "none";
        resultCont.style.display = "";
        resultCont.textContent = "Your score:" + score;
-       return;   
+       
+       //Create button with JavaScript
+       var button = document.createElement('button');
+       button.setAttribute('type','button')
+       button.appendChild(document.createTextNode('RANKING'));
+       document.body.appendChild(button);
+       
+       //Function to link to ranking.html
+       button.onclick =  function showRanking(){
+       window.location='ranking.html';
+       }        
     }
     loadQuestion(currentQuestion);
 }
@@ -51,7 +63,7 @@ loadQuestion(currentQuestion);
 //Saving data_user in localStorage
 function saveuser() {
     var inpNick = document.getElementById("inpNick");
-
+    var totalScore = documen.getElementById("result")
     var data = JSON.parse(localStorage.getItem("datauser"));
   
     if(data == null) {
@@ -59,13 +71,13 @@ function saveuser() {
         data = [];
     }
   
-    var register = [
+    var register = [ 
         {name: inpNick.value},
-        {score_user: score.value}
+        {score: totalScore.value}
     ];
   
     data.push(register);
     localStorage.setItem("datauser", JSON.stringify(data))
   }
-  saveuser()
+ 
   
