@@ -65,7 +65,7 @@ function saveuser() {
     var inpNick = document.getElementById("inpNick");
     var totalScore = documen.getElementById("result")
     var data = JSON.parse(localStorage.getItem("datauser"));
-  
+    
     if(data == null) {
         localStorage.setItem("datauser","[]")
         data = [];
