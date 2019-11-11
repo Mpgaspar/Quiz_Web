@@ -1,21 +1,25 @@
 body {
     background-color:#6cf;
+    width: 100%;
+    margin: 10px 20px 10px 20px;
 }
 
 .footer {
-    position: absolute;
-    margin-top: 450px;
+    position: relative;
+    margin-top: 400px;
+    float: right;   
 }
 
 .footer-links {
     display: inline-block;
     position: relative;
-    margin-left: 900px;
+    margin-left: 10%;   
 }
 
 .container {
     height: 300px;
-    width: 1000px;
+    width: 80%;
+    margin: 20px 2px 20px 2px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,7 +48,7 @@ body {
 }
 
 .option {
-    width: 470px;
+    width: 400px;
     display: inline-block;
     padding: 10px 0 10px 0 15px;
     vertical-align: middle;
@@ -68,7 +72,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     float: right;
-    margin: 10px;
+    margin-right: 25px;
 }
 
 .next-btn:hover {
@@ -84,5 +88,7 @@ body {
 .result {
     height: 100px;
     text-align: center;
-    font-size: 75px;
+    margin: 10px;
+    font-size: 60px;
+    color:orangered;
 }

@@ -36,7 +36,7 @@ function loadNextQuestion () {
     selectedOption.checked = false;
     currentQuestion++;
     if(currentQuestion == totQuestions - 1){
-        nextButton.textContent = "Finish";
+        nextButton.textContent = "FINISH";
     }
 
     //Show score when finish questios
