@@ -39,7 +39,7 @@ function loadNextQuestion () {
         nextButton.textContent = "FINISH";
     }
 
-    //Show score when finish questios
+    //Show score when finish questions
     if(currentQuestion == totQuestions){
        container.style.display = "none";
        resultCont.style.display = "";
